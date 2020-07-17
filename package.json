@@ -13,7 +13,8 @@
     "prismic-javascript": "2.2.0",
     "prismic-reactjs": "1.2.0",
     "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "react-dom": "^16.13.0",
+    "react-image": "^4.0.3"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.0",
