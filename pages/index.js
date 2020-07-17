@@ -12,8 +12,9 @@ export default function Index({ preview, allPosts }) {
   const morePosts = allPosts.slice(1)
   return (
     <>
-      <Layout>
-        <Container>
+      <Layout preview={preview}>
+        <div className="relative h-screen">
+          <Intro />
           {heroPost && (
             <HeroPost
               title={heroPost.title}
@@ -24,8 +25,8 @@ export default function Index({ preview, allPosts }) {
               excerpt={heroPost.excerpt}
             />
           )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-        </Container>
+        </div>
+        {morePosts.length > 0 && <MoreStories posts={morePosts} />}
       </Layout>
     </>
   )
