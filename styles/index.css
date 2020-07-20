@@ -3,7 +3,9 @@
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
-
+body{
+  background: black;
+}
 .cbu-parent{
   background: linear-gradient(to bottom, #3db4c9 0%, #3d8ac9 100%);
 }
