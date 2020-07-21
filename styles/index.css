@@ -150,23 +150,53 @@ body{
 .justin-atlan{
   background-image: url('../img/justin_atlan.png');
 }
-
 .book-cover{
   background-image: url('../img/7-steps-passion@2x.png');
 }
+
 .traffic-tracker{
   background: white;
-  border-radius: 100px;
   position: fixed;
-  bottom: 1rem;
-  right: -100%;
+  bottom: -100%;
   opacity: 0;
-  width: 20rem;
-  animation: 10s showTrafficTracker forwards;
+  left: 0;
+  width: 100%;
+  animation: 10s showTrafficTrackerMobile forwards;
   animation-delay: 4s;
 }
 .traffic-tracker p{
   color: black;
+}
+
+@media(min-width: 728px){
+  .traffic-tracker{
+    border-radius: 100px;
+    bottom: 1rem;
+    right: -100%;
+    left: initial;
+    opacity: 0;
+    width: 20rem;
+    animation-delay: 4s;
+    animation: 10s showTrafficTracker forwards;
+  }
+}
+
+@keyframes showTrafficTrackerMobile{
+  0%{
+    bottom: -100%;
+    opacity: 0;
+  }
+  5%{
+    bottom: 0;
+    opacity: 1;
+  }
+  95%{
+    opacity: 1;
+  }
+  100%{
+    bottom: 0;
+    opacity: 0;
+  }
 }
 
 @keyframes showTrafficTracker{
