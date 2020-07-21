@@ -65,6 +65,7 @@ export default function Index({allPosts}) {
                 <p className="text-1xl w-8/12 self-center">You and <b>47 people</b> are <br />on this page right now.</p>
               </div>
             </section>
+            <p className="text-1xl py-10">ClickBank University does not own or operate this website and is not responsible for its contents. It is owned by Offer Bucket, an independent marketing affiliate.</p>
           </Container>
         </Layout>
       </>
