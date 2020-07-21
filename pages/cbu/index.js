@@ -5,9 +5,12 @@ import Head from 'next/head'
 
 import { pdfDocs } from '../../lib/api'
 
+import ReactGA from 'react-ga';
+const trackingId = "UA-173193284-1"; // Replace with your Google Analytics tracking ID
 
 export default function Index({allPosts}) {
-  console.log(allPosts[0].node.pdf_docs.url)
+  ReactGA.initialize(trackingId);
+  ReactGA.pageview('/cbu');
   return (
     <div className="cbu-parent">
       <>
@@ -27,7 +30,7 @@ export default function Index({allPosts}) {
                 </div>
                 <div className="buttons flex flex-col grid grid-cols-12 cols-gap-6 md:px-0 md:flex-row justify-center align-center relative block">
                   <div className="mx-0 my-2 md:mx-2 col-span-12 md:col-span-6 self-center relative w-full md:w-auto">
-                    <a className="main-cta cta py-3 px-4 md:px-6 block md:static text-center shadow-lg text-2xl" href="https://be03f1v54irfsw5bfg0f9nco99.hop.clickbank.net/"><b>CLICK TO ENROLL NOW</b></a>
+                    <a id="fold-btn" className="main-cta cta py-3 px-4 md:px-6 block md:static text-center shadow-lg text-2xl" href="https://be03f1v54irfsw5bfg0f9nco99.hop.clickbank.net/"><b>CLICK TO ENROLL NOW</b></a>
                     <svg className="absolute cursor-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 14.655l-5.799.908 3.393 6.917-3.111 1.52-3.413-6.982-4.07 3.651v-15.857l13 9.843m-12.792-10.905l-1.042.519-1.536-3.087 1.043-.519 1.535 3.087zm2.599-3.577l-1.152-.173-.513 3.409 1.152.173.513-3.409zm-4.779 5.848l.557-1.023-3.028-1.648-.557 1.023 3.028 1.648z"/></svg>
                   </div>
                   <div className="mx-0 my-2 md:mx-2 col-span-12 md:col-span-6 self-center w-full md:w-auto">
@@ -43,7 +46,7 @@ export default function Index({allPosts}) {
                   <div className="col-span-12 md:col-span-6">
                     <h3 className="mb-3 text-2xl uppercase font-bold">Meet Justin Atlan!</h3>
                     <p className="pb-5">He is the creator of <b>ClickBank University.</b> Was named <b>entreprenuer of the year</b> by the Impact 100 Awards, and has been written up in publications like, Business Insider, Yahoo Finance, and CNN Money. Justin's business today has made more than <b>8 figures</b> using <b>ClickBank.</b> Now it's your turn. Click the enroll button below to get started.</p>
-                    <a className="main-cta cta py-3 px-2 md:px-6 block md:static text-center shadow-lg text-2xl" href="https://be03f1v54irfsw5bfg0f9nco99.hop.clickbank.net/"><b>CLICK TO ENROLL TODAY</b></a>
+                    <a id="scroll-btn" className="main-cta cta py-3 px-2 md:px-6 block md:static text-center shadow-lg text-2xl" href="https://be03f1v54irfsw5bfg0f9nco99.hop.clickbank.net/"><b>CLICK TO ENROLL TODAY</b></a>
                   </div>
                 </div>
 
