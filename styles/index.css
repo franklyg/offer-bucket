@@ -84,7 +84,7 @@ body{
 .video-arrow{
   position: relative;
   top: 1rem;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 .video-iframe{
   background: url('../img/thumbnail.png') center center;

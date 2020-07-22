@@ -29,7 +29,7 @@ export default function Index({allPosts}) {
                   {/*<iframe className="shadow-md my-t-6 mx-auto" src="https://www.youtube.com/embed/not5j64lEN0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>*/}
 
                 </a>
-                <p className="text-1xl text-white text-center pt-4 pb-2">(You will be directed to the ClickBank University page.)</p>
+                <p className="text-1xl text-white text-center md:pt-4 pb-2">(You will be directed to the ClickBank University page.)</p>
                 <div className="buttons flex flex-col grid grid-cols-12 cols-gap-6 md:px-0 md:flex-row justify-center align-center relative block">
                   <div className="mx-0 my-2 md:mx-2 col-span-12 md:col-span-6 self-center relative w-full md:w-auto">
                     <a id="fold-btn" className="main-cta cta py-3 px-4 md:px-6 block md:static text-center shadow-lg text-2xl" href="https://be03f1v54irfsw5bfg0f9nco99.hop.clickbank.net/"><b>CLICK TO ENROLL NOW</b></a>
