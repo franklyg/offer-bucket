@@ -20,14 +20,16 @@ export default function Index({allPosts}) {
               <h1 className="text-center text-4xl md:text-6xl"><b>CLICK BANK UNIVERSITY</b></h1>
               <h2 className="text-center text-2xl md:text-4xl">Start making a passive income online <b>today.</b></h2>
               <h3 className="text-center text-2xl md:text-3xl flex flex-row align-center justify-center">
-                <svg className="video-arrow mx-3 left-arrow self-center" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M16 9v-4l8 8-8 8v-4s-13.277-2.144-16-14c5.796 6.206 16 6 16 6z"/></svg>
-                  <b>Click the video below to learn more!</b>
+                <svg className="video-arrow mx-3 left-arrow self-center block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M16 9v-4l8 8-8 8v-4s-13.277-2.144-16-14c5.796 6.206 16 6 16 6z"/></svg>
+                  <b>Click the thumbnail below to learn more!</b>
                 <svg className="video-arrow mx-3 right-arrow self-center" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M16 9v-4l8 8-8 8v-4s-13.277-2.144-16-14c5.796 6.206 16 6 16 6z"/></svg>
               </h3>
               <div className="video">
-                <div className="video-iframe mx-auto my-6">
-                  <iframe className="shadow-md my-t-6 mx-auto" src="https://www.youtube.com/embed/not5j64lEN0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
-                </div>
+                <a href="https://be03f1v54irfsw5bfg0f9nco99.hop.clickbank.net/" className="video-iframe mx-auto my-6 block">
+                  {/*<iframe className="shadow-md my-t-6 mx-auto" src="https://www.youtube.com/embed/not5j64lEN0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>*/}
+
+                </a>
+                <p className="text-1xl text-white text-center pt-4 pb-2">(You will be directed to the ClickBank University page.)</p>
                 <div className="buttons flex flex-col grid grid-cols-12 cols-gap-6 md:px-0 md:flex-row justify-center align-center relative block">
                   <div className="mx-0 my-2 md:mx-2 col-span-12 md:col-span-6 self-center relative w-full md:w-auto">
                     <a id="fold-btn" className="main-cta cta py-3 px-4 md:px-6 block md:static text-center shadow-lg text-2xl" href="https://be03f1v54irfsw5bfg0f9nco99.hop.clickbank.net/"><b>CLICK TO ENROLL NOW</b></a>

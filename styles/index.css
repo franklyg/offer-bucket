@@ -87,6 +87,9 @@ body{
   visibility: hidden;
 }
 .video-iframe{
+  background: url('../img/thumbnail.png') center center;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
