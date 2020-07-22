@@ -1,24 +1,17 @@
 import Head from 'next/head'
 import { CMS_NAME, HOME_OG_IMAGE_URL } from '../lib/constants'
 
-import {Helmet} from "react-helmet";
+import importScript  from '../hooks/use-script';
 
 
 // <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/85ed7c9f37af452193f0a22ed/72edd5f002105dc20abd3a860.js");</script>
 
+
 export default class Meta extends React.Component{
-  componentDidMount () {
-      const script = document.createElement("script");
-
-      script.src = '!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/85ed7c9f37af452193f0a22ed/72edd5f002105dc20abd3a860.js");';
-      script.id = 'mcjs'
-      script.async = true;
-
-      document.body.appendChild(script);
-  }
   render(props){
     return (
       <Head>
+        <script id="mcjs">{`!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/85ed7c9f37af452193f0a22ed/72edd5f002105dc20abd3a860.js");`}</script>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
